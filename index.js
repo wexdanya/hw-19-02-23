@@ -7,11 +7,12 @@
 const numbers = [1, 2, 3, 4, 5];
 const getNewArr = (rest) =>
   rest.length > 0 ? [Math.min(...rest), Math.max(...rest)] : [];
-
+console.log(getNewArr(numbers));
 // 2)написати функцію стрілку, яка приймає безліч аргументів
 // і повертає результат їх множення, якщо аргументів не має - повертає null
 const getMultiplication = (rest) =>
   rest.length > 0 ? rest.reduce((acc, cur) => acc * cur) : null;
+console.log(getMultiplication(numbers));
 
 // 3)переписати функцію, що нижче на функцію стрілку
 // function askUser(quetion){
